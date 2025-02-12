@@ -1,0 +1,41 @@
+def sumaNumero(a,b):
+    resultado = a+b
+    return resultado
+
+def restaNumeros(a,b):
+    resultado = a-b
+    return resultado
+
+def multiplicaNumeros(a,b):
+    resultado = a*b
+    return resultado
+
+
+
+def mostrarMenu ():
+    print("Seleccione una opción")
+    print("1.- Suma los números")
+    print("2.- Resta")
+    print("3.- Multiplica")
+    print("4.- Salir")
+
+#-------------------
+print("Calculadora métodos")
+print("Introduzca el numero 1")
+numero1= int(input())
+print("Introduzca número 2")
+numero2 = int(input())
+
+mostrarMenu()
+opcion = int(input())
+operacion = 0
+if (opcion == 1):
+    operacion = sumaNumero(numero1,numero2)
+elif( opcion ==2):
+    operacion = restaNumeros
+elif( opcion==3):
+    operacion = multiplicaNumeros(numero1, numero2)
+else:
+    print("no ha seleccionado la opción correcta")
+print("Operación es " + str(operacion))
+print("Fin del programa")
