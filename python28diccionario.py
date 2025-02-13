@@ -1,0 +1,23 @@
+print("Dicionario en Python")
+provincias = {
+        924 : "Badajoz",
+        956:  "Cádiz",
+        958 : "Granada",
+        959 : "Huelva", 
+        91 : "Madrid",
+        95 : "Málaga",
+        968 : "Murcia",
+        923 : "Salamanca",
+        95 : "Sevilla",
+        922 : "Sta. Cruz de Tenerife",
+        975 : "Soria",
+        96 : "Valencia",
+        976 : "Zaragoza"}
+for clave,provincia in provincias.items():
+    print(clave,provincia)
+dato= provincias.get(91)
+print(dato)
+dato = provincias.setdefault(925, "Toledo")
+print (dato)
+provincias.pop(976)
+print(provincias)
